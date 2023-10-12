@@ -1,12 +1,25 @@
-﻿using System;
+﻿using AMKDotNetCore.ConsoleApp.AdoDotNetExamples;
+using System;
+using System.Data.SqlClient;
+using AMKDotNetCore.ConsoleApp.DapperExamples;
 
 namespace AMKDotNetCore.ConsoleApp
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // F5 => Run
+            /*Console.WriteLine("Hello World!");
+            AdoDotNetExample adoDotNetExample = new AdoDotNetExample(); 
+            adoDotNetExample.Run();*/
+
+            DapperExample dapperExample = new DapperExample();
+            dapperExample.Run();
+
+            Console.WriteLine("Press any key to continue... ");
+            Console.ReadKey();
+
         }
     }
 }
