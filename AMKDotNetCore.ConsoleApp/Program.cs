@@ -2,6 +2,7 @@
 using System;
 using System.Data.SqlClient;
 using AMKDotNetCore.ConsoleApp.DapperExamples;
+using AMKDotNetCore.ConsoleApp.EFCoreExamples;
 
 namespace AMKDotNetCore.ConsoleApp
 {
@@ -14,8 +15,11 @@ namespace AMKDotNetCore.ConsoleApp
             AdoDotNetExample adoDotNetExample = new AdoDotNetExample(); 
             adoDotNetExample.Run();*/
 
-            DapperExample dapperExample = new DapperExample();
-            dapperExample.Run();
+            //DapperExample dapperExample = new DapperExample();
+            //dapperExample.Run();
+
+            EFCoreExample eFCoreExample=new EFCoreExample();
+            eFCoreExample.Run();
 
             Console.WriteLine("Press any key to continue... ");
             Console.ReadKey();
