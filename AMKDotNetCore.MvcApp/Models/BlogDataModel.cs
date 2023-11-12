@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AMKDotNetCore.ConsoleApp.Models
+namespace AMKDotNetCore.MvcApp.Models
 {
     [Table("Tbl_Blog")]
     public class BlogDataModel

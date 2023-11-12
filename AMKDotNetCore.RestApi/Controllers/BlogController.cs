@@ -130,7 +130,7 @@ namespace AMKDotNetCore.RestApi.Controllers
                 Message = message,
 
             };
-           
+
             return Ok(model);
         }
     }
