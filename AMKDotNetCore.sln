@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMKDotNetCore.WindowsFormsA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMKDotNetCore.RestApi", "AMKDotNetCore.RestApi\AMKDotNetCore.RestApi.csproj", "{A480E57C-186B-4B15-958C-FE87C68C1065}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMKDotNetCore.MvcApp", "..\..\AEHKLMNSTZDotNetCore\AEHKLMNSTZDotNetCore.MvcApp\AMKDotNetCore.MvcApp.csproj", "{922DF6C6-A03E-40C7-BECA-8B6D689BD9A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMKDotNetCore.MvcApp", "AMKDotNetCore.MvcApp\AMKDotNetCore.MvcApp.csproj", "{C3F8E594-DEC6-41A3-AAEE-E195EA0DA6EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{A480E57C-186B-4B15-958C-FE87C68C1065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A480E57C-186B-4B15-958C-FE87C68C1065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A480E57C-186B-4B15-958C-FE87C68C1065}.Release|Any CPU.Build.0 = Release|Any CPU
-		{922DF6C6-A03E-40C7-BECA-8B6D689BD9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{922DF6C6-A03E-40C7-BECA-8B6D689BD9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{922DF6C6-A03E-40C7-BECA-8B6D689BD9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{922DF6C6-A03E-40C7-BECA-8B6D689BD9A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F8E594-DEC6-41A3-AAEE-E195EA0DA6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F8E594-DEC6-41A3-AAEE-E195EA0DA6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F8E594-DEC6-41A3-AAEE-E195EA0DA6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F8E594-DEC6-41A3-AAEE-E195EA0DA6EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

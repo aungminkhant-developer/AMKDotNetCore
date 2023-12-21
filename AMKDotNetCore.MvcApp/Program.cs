@@ -1,3 +1,4 @@
+using AMKDotNetCore.MvcApp.EFDbContext;
 using AMKDotNetCore.MvcApp;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,12 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<AppDbContext>(opt =>
+builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
-}
-    );
+    string? connectionString = builder.Configuration.GetConnectionString("DbConnection");
+    options.UseSqlServer(connectionString);
+},
+ServiceLifetime.Transient,
+ServiceLifetime.Transient);
 
 var app = builder.Build();
 

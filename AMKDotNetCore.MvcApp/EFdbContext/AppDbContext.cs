@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace AMKDotNetCore.MvcApp
+namespace AMKDotNetCore.MvcApp.EFDbContext
 {
     public class AppDbContext : DbContext
     {

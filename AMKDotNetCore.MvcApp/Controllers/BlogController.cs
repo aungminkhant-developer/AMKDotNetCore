@@ -1,4 +1,5 @@
-﻿using AMKDotNetCore.MvcApp.Models;
+﻿using AMKDotNetCore.MvcApp.EFDbContext;
+using AMKDotNetCore.MvcApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
