@@ -1,0 +1,64 @@
+﻿@model Account
+@{
+    ViewData["Title"] = "Account Page";
+}
+<a href="/Home/SignOut">Sign Out</a>
+
+<h3>Welcome @Model.Name</h3>
+
+<button type="button" onclick="checkBalance()">Check Your Balance</button>
+<button type="button" onclick="showDepositModal()">Deposit</button>
+<button type="button" onclick="showWithdrawModal()">Withdraw</button>
+
+<!-- Modal -->
+<div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="depositModalLabel">Deposit</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="txtDeposit">Deposit Amount</label>
+                        <input type="text" class="form-control" id="txtDeposit" placeholder="Enter amount you want to deposit">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnDeposit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="depositModalLabel">Withdraw</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="txtWithdraw">Withdraw Amount</label>
+                        <input type="text" class="form-control" id="txtWithdraw" placeholder="Enter amount you want to withdraw">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    <button type="button" class="btn btn-primary" id="btnWithdraw">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+    <script src="~/js/account.js"></script>
+
+}
